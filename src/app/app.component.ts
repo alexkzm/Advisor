@@ -8,3 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
 }
+
+/*
+enum
+interface
+protected constructor
+<T>(arg: T) => T
+declare let
+symbol()
+@a
+@b
+@c
+*/
