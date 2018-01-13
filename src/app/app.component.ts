@@ -19,4 +19,13 @@ symbol()
 @a
 @b
 @c
+
+export class Major implements OnInit {
+	
+	constructor (private)
+
+	ngOnInit() {
+	
+	}
+}
 */
