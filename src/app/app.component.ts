@@ -7,6 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  products: Array<string> = []
+
+  theDataSource: Observable<string>
+
+  constructor(private http: Http) {
+
+  this.theDataSource = this.http.get('/api/products')
+  	.map(res => res.json())
+  }
+
+  ngOnInit(){
+  	this.theDataSource.subscribe(
+  	data => this.products=data,
+  	err => console.log("error Code: %s, URL: %s ", err.status, err.url))
+  }
 }
 
 /*
