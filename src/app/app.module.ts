@@ -16,3 +16,15 @@ import { AppComponent } from './app.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+class Person {
+  name: String;
+  age: number;
+}
+
+class Customer {
+  name: String;
+}
+
+const customer: Customer = new Person();
