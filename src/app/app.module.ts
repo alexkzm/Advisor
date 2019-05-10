@@ -28,3 +28,11 @@ class Customer {
 }
 
 const customer: Customer = new Person();
+
+function printThis<T> (content: T): T {
+  console.log(content);
+  return content;
+}
+
+const getProducts = function<T>(id?: T):
+  T extends number ? Product : Product []
